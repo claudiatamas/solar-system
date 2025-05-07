@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+canvas {
+  display: block;
+  cursor: pointer;
+}
+#planet-name-box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  display: none;
+  font-family: Arial, sans-serif;
+}
+#planet-description-modal {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+  width: 400px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-top: 5px solid #4a90e2;
+}
+
+#planet-description-text {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #444;
+}
+
+#planet-description-modal button {
+  padding: 10px 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s;
+  font-weight: bold;
+}
+
+#planet-description-modal button:hover {
+  background-color: #3570b4;
+}
+
+@media (max-width: 600px) {
+  #planet-description-modal {
+    width: 85%;
+    padding: 15px;
+  }
+}
