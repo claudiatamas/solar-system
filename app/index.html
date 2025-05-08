@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro"> 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Explorator Sistem Solar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="scene"></canvas>
+  <canvas id="scene"></canvas> 
 
-  <div id="planet-name-box"></div>
-
-  <div id="planet-description-modal">
-    <p id="planet-description-text"></p>
-    <button id="close-modal">Închide</button>
+  <div id="planet-name-box"></div> 
+  <div id="welcome-modal" class="modal">
+    <div class="modal-content">
+      <h2>Bun venit în Exploratorul Sistemului Solar!</h2>
+      <p>Dă click pe fiecare planetă pentru a descoperi curiozități interesante despre ea.</p>
+      <button id="close-welcome">Închide</button>
+    </div>
   </div>
-  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
-  <script defer src="main.js"></script>
+  <div id="planet-description-modal">
+    <p id="planet-description-text"></p> 
+    <button id="close-modal">Închide</button> 
+  </div>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script> 
+  <script defer src="main.js"></script> 
 </body>
 </html>
